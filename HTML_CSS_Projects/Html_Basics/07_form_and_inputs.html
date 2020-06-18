@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form and Inputs</title>
+</head>
+<body>
+    <!-- Text -->
+    <div>
+        <!-- for attribute of label should associate with id attribute of input. So if we click on lablel, associated  input with it will be  highlighed -->
+        <!-- Each input tag must have name attribute which will  allow us to extract valued entered by user in backend -->
+        <!-- Here in backend : request.get("user_name")  | request.get("user_email")-->
+        <label for="user_name">Name</label><br>
+        <input type="text" name="user_name" id="user_name" value="David">
+        <!-- Prefill value in  name using  value -->
+    </div>
+
+    <!-- Email -->
+    <div>
+        <label for="email">Email</label><br>
+        <input type="email" name="user_email" id="email" placeholder="Enter your email">
+        <!-- To highlight input box  use  placeholder  -->
+    </div>
+
+    <!-- Textarea -->
+    <div>
+        <label for="message">Enter you message</label > <br>
+        <textarea name="user_message" id="message" cols="30" rows="10"></textarea>
+    </div>
+
+    <!-- Select box -->
+    <div>
+        <label for="sex">Sex</label><br>
+        <select name="user_gender" id="sex">
+            <option value="male">Male</option>
+            <option value="female" selected> Female</option>
+            <!-- selected  in select drop indictes defaultt option which is selected -->
+            <option value="others">Others</option>
+        </select>
+    </div>
+
+    <!-- Number -->
+    <div>
+        <label for="age">Age</label>  <br>
+        <input type="number" name="user_age" id="age">
+    </div>
+
+
+    <!-- Date  input -->
+    <div>
+        <label for="birthdate">Enter birthdate</label>  <br>
+        <input type="date" name="user_birth_date" id="birthdate">
+        <!-- Get birthdate of user in backend using  request.get("user_birth_date") -->
+    </div>
+
+    <!-- Radio  button -->
+    <div>
+        <label for="membership">Membership Type </label><br>
+        <input type="radio" name="user_membership" id="membership" value="standard">Standard
+        <input type="radio" name="user_membership" id="membership" value="premium" checked> Premium
+        <!--  checked indicates initial radio button which is checked -->
+        <input type="radio" name="user_membership" id="membership" value="ultimate">Ultimate
+    </div>
+    
+    
+    <!-- Checkbox -->
+    <div>    
+        <label for="likes">Likes</label><br>
+        <input type="checkbox" name="user_likes" id="likes" value="bike">Bike
+        <input type="checkbox" name="user_likes" id="likes" value="car" checked> Car
+        <input type="checkbox" name="user_likes" id="likes" value="plane">Plane
+        <!--  checked indicates initial checkbox button which is checked -->
+    </div>
+
+    <!-- Submit -->
+    <div>
+        <input type="submit" value="Submit">
+        <!-- Button is also  other alternative : 
+            <button  type="submit"> Submit </button>
+            <input> is a self closing tag like  <img> or <br>
+        -->
+    </div>
+
+</body>
+</html>
