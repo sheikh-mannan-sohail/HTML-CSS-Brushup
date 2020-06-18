@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div, Span and Inline</title>
+    <style>
+        .card{
+            border: 2px #ccc solid;
+            background: #f4f4f4; 
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+        .enhance{
+            background-color: black;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="main-header" class="card">
+        <h1>Welcome</h1>
+        <p>A site about myself</p>
+    </div>
+    
+    <div id="main-nav">
+        <ul>
+            <li><a href="#">Home</a> </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <div id="about" class="card">
+        <h3>About</h3>
+        <!-- span in inline  element  -->
+        <!-- Try div in place of span, will move the content to new line. But since it a part of same sentence it should be next to each other -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime modi <span class="enhance">dolorum magnam veniam cupiditate </span>unde sunt consectetur ex quos tempore rem, eligendi dignissimos explicabo ratione incidunt voluptatem inventore necessitatibus earum velit quia voluptatum reprehenderit architecto, tenetur repellendus! Soluta quis officiis consectetur delectus illum adipisci ipsam aperiam, vel, quibusdam, omnis dolorem.</p>
+    </div>
+
+    <div id="contact" class="card">
+        <h3>Contact</h3>
+        <ul>
+            <li>Address : Lorem ipsum dolor sit amet. </li>
+            <li>Phone : 847958734985</li>
+            <li>Email : me@gmail.com</li>
+        </ul>
+    </div>
+
+    <div id="footer">
+        
+        <p>Copyright 2020   </p>
+    </div>
+
+</body>
+</html>
