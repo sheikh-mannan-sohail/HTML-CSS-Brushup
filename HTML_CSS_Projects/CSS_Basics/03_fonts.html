@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  External font  linking -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <title>Font Properties CSS</title>
+    <style>
+        body{
+            /* Internal font. We can also use external font  */
+           font-family: Arial, Helvetica, sans-serif; /* Times New Roman is default */
+           font-size: 18px; /* Specifies Size of character in text.16px is default */ 
+           line-height: 1.6; /* gap between each line to  the nex */
+        }
+        
+        #home p span /* nested selection of span within home p */
+        {
+            font-weight: bold;
+        }
+        #about p span
+        {
+            font-style: italic;
+        }
+        #external_font_usage{
+            font-family: 'Roboto',  sans-serif; /* Applying  external font to elements */
+        }
+    </style>
+</head>
+<body>
+    <div id="home"> 
+        <h2 class="primary-heading">Home</h2>
+        <p id="external_font_usage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ipsam aut eius iusto quibusdam qui consequuntur, consectetur corporis illo. Veniam veritatis eum nobis porro quam ipsam beatae mollitia, nulla quaerat?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span>Modi voluptatum, eligendi fugiat a architecto repudiandae commodi doloribus</span>. Reprehenderit odit voluptatibus corrupti dolor modi magni consectetur voluptate totam. Voluptates nihil aliquam assumenda quidem reprehenderit, beatae ut similique repudiandae architecto quia id, ratione odio ipsam quas suscipit obcaecati aut exercitationem mollitia! Deserunt, similique laboriosam, dolore quis aut eos sed pariatur saepe, dolorem totam molestias ipsam culpa ducimus voluptatibus nihil reiciendis blanditiis expedita at aliquid dolores quos. Velit beatae magnam eveniet hic illo. Sunt nam voluptates optio possimus ullam sapiente labore ducimus. Praesentium vero rerum dolore nemo ab aut recusandae accusamus nulla inventore.</p>
+    </div>
+    <div id="about">
+        <h2 class="primary-heading">About</h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span>Voluptates eos aut non repellendus animi. Quae, hic eius sint, repellat eaque necessitatibus illum, ad </span> voluptatum dolore odit commodi modi ipsum velit ut voluptates? Deserunt suscipit, aliquam necessitatibus eligendi unde illum consequuntur voluptates asperiores laudantium aperiam nemo architecto provident placeat soluta, sed minus, ipsum atque eaque? Non molestias sint reiciendis soluta placeat voluptatibus dolorem officia voluptatem natus saepe. Temporibus doloribus corporis tempora!</p>
+    </div>
+</body>
+</html>
