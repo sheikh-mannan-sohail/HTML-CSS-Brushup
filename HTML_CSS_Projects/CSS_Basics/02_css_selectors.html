@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Selectors</title>
+    <style>
+
+        /* Element selectors. Target all elements in the page no matter where they are */
+        body{
+            background-color: gray;
+        }
+
+        /* Class selector. Use class when the same styling can be applied to some other tag */
+        .primary-heading{
+            color: blue;
+        }
+
+        /* id selector. id should be unique to specific element. It shouldn't be reused according to standard.  If styling is reused class will be a better option */
+        #home{
+            background-color: yellow;
+        }
+
+        /* Multiple selectors */
+        #home,#about{
+            border: 1px  solid red;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Nested selectors. I want to  target p which is within id=home. This didn't affect about p */
+        #home p 
+        {
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="home"> 
+        <h2 class="primary-heading">Home</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta facilis, quibusdam quam repudiandae praesentium laboriosam minima. Totam provident numquam accusantium! Cumque, voluptas ab optio voluptatem aliquid doloremque quia quibusdam nostrum.</p>
+    </div>
+    <div id="about">
+        <h2>About</h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, ea accusantium impedit reiciendis ipsa autem velit quibusdam quaerat mollitia consequatur aut incidunt possimus laborum temporibus, dignissimos, nihil repudiandae distinctio quae?</p>
+    </div>
+</body>
+</html>
