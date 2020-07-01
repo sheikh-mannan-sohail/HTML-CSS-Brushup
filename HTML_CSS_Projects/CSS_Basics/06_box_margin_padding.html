@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box,Margin,Padding</title>
+    <style>
+        *{
+            padding : 0px;
+            margin : 0px;
+            box-sizing: border-box;  /* If we want width of box to stay as set no matter what padding/margin is added.*/
+        }
+        .box
+        {
+            border : 3px solid red;
+            /* padding on all sides */
+            padding : 20px; 
+
+            /* padding per side */
+            padding-top: 10px;
+            padding-right:20px;
+            padding-bottom:10px;
+            padding-left:20px;
+
+            /* padding shortcut : top right  bottom  left  */
+            padding : 10px  20px  10px  20px ;
+
+            /* padding shortcut : top/bottom right/left */
+            padding : 10px 20px;
+
+            /* margin on all sides */
+            margin : 10px ;
+            width : 500px;
+
+            /* Ctrl + D to select same words below selected  */
+
+            /* margin per side */
+            margin-top: 10px;
+            margin-right:20px;
+            margin-bottom:10px;
+            margin-left:20px;
+
+            /* margin shortcut : top right  bottom  left  */
+            margin : 10px  20px  10px  20px ;
+
+            /* margin shortcut : top/bottom right/left */
+            margin : 10px 20px;
+            /* If same style is written at bottom which is on top. The new bottom one will override top one
+                Line 4: padding : 10px;
+
+
+                Line 6 : padding : 20px;
+
+                Line 6 padding will  play effect in website
+             */
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <h3>Box-1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae hic corporis cupiditate asperiores in similique consequatur suscipit expedita deserunt fugit accusamus earum consequuntur qui, velit beatae sapiente mollitia sed aliquid.</p>
+    </div>
+
+    <div class="box">
+        <h3>Box-2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque maiores excepturi possimus placeat animi dolores ab officiis sapiente beatae quis! Earum ipsum sit vero ipsam libero labore eligendi amet et?</p>
+    </div>
+</body>
+</html>
