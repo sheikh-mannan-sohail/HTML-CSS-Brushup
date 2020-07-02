@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links and Button</title>
+    <style>
+        a{
+            color : #333;
+            text-decoration: none;  /* removes underline in  link */
+        }
+
+        /* When we move our cursor on link */
+
+        a:hover{
+            color : blue;
+            font-size:  40px;
+        }
+
+        /* To  differentiate b/w visited and unvisited links */
+        
+        /* a:visited{
+            color : purple;
+        } */
+
+        /* active state is when we click on the link */
+
+
+        /* a:active {
+            color : red;
+        } */
+
+        /* style  button and link */
+        .btn{
+            background: #4c6ca0;
+            color : white;
+            border : none;
+            padding : 10px  20px;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 5px;
+            cursor: pointer;    
+        }
+
+        .btn:hover{
+            color : red;
+            /* This hover  will override <a> hover as it is  defined recently in css  */
+        }   
+
+    </style>
+</head>
+<body>
+    
+    <!-- add line break as both are line (a and  button ) -->
+
+    <br>
+
+    <a href="#" class="btn">My Link</a>
+    
+    <br>
+    <br>
+
+    <button class="btn">My Button</button>
+
+</body>
+</html>
