@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display property</title>
+
+    <style>
+
+        *{
+            box-sizing: border-box ;
+        }
+        img {
+            margin : auto ; /* Won't center the image. Because margin cannot be applied on inline element. It needs to be  block level*/
+        }
+        .modified li{
+            display: inline;
+        }
+        .modified li a {
+            padding-right: 20px;
+        }
+        .modified img{
+            display: block ;
+            margin : auto ; /* margin auto works here  as we have modified img to be  block level element */
+
+        }
+
+        .box{
+            display: inline-block; /* using just inline doesn't work ,because property width cannot be used on inline element */
+            background-color: gray;
+            padding : 20px;
+            width : 30%;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Try removing styling and check -->
+
+    <!-- changing li from block level to inline  level -->
+    <div>
+        <h2>Actual behaviour of li</h2>
+        <ul>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Fitness</a></li>
+            <li><a href="#">Art</a></li>
+        </ul>
+    </div>
+
+    <div class="modified">
+        <h2>Modified behaviour of li</h2>
+        <ul>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Fitness</a></li>
+            <li><a href="#">Art</a></li>
+        </ul>
+    </div>
+
+    <br>
+    <br>
+
+    <!-- changing img from inline to block -->
+    <div>
+        <h2>Actual behaviour of img</h2>
+        <img src="./img/leaf.png" alt="Leaf">
+        <img src="./img/leaf.png" alt="Leaf">
+    </div>
+
+    <div class="modified">
+        <h2>Modifieds behaviour of img to display  block level</h2>
+        <img src="./img/leaf.png" alt="Leaf">
+        <img src="./img/leaf.png" alt="Leaf">
+    </div>
+
+    <br>
+    <br>
+
+    
+    <div class="box">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus provident in consequatur distinctio atque consectetur eos consequuntur? Modi vel aliquid nobis beatae natus voluptas perferendis.</p>
+    </div>
+    <div class="box">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus provident in consequatur distinctio atque consectetur eos consequuntur? Modi vel aliquid nobis beatae natus voluptas perferendis.</p>
+    </div>
+    <div class="box">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus provident in consequatur distinctio atque consectetur eos consequuntur? Modi vel aliquid nobis beatae natus voluptas perferendis.</p>
+    </div>
+
+    </body>
+</html>
